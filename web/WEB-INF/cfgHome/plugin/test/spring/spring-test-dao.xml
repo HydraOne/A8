@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http:springframework.org.dtd/spring-beans.dtd">
+
+<beans default-autowire="byName">
+    <!--6-->
+    <!--通用数据获取-->
+    <bean name="CommonDaoImpl" class="com.seeyon.apps.test.contractEvents.dao.impl.CommonDaoImpl"></bean>
+    <!--栏目-->
+    <bean name="ColumnMapperImpl" class="com.seeyon.apps.test.contractColumn.dao.impl.ColumnMapperImpl"></bean>
+    <!--付款定时任务-->
+    <bean name="TimedTaskDaoImpl" class="com.seeyon.apps.test.timedTask.dao.impl.TimedTaskDaoImpl"></bean>
+    <!--添加时间视图信息和认证-->
+    <bean name="FormTimeViewMapperImpl" class="com.seeyon.apps.test.paymentCalendar.dao.impl.FormTimeViewMapperImpl"></bean>
+    <!--合同付款累加-->
+    <bean name="PayFormDaoImpl" class="com.seeyon.apps.test.payFormEvents.dao.impl.PayFormDaoImpl"></bean>
+    <!--9-->
+    <!--文件批量下载-->
+    <bean name="MyFileDaoImpl" class="com.seeyon.apps.test.download.dao.impl.MyFileDaoImpl"></bean>
+    <!--ftp-->
+    <bean id="FtpDaoImpl" class="com.seeyon.apps.test.download.dao.impl.FtpDaoImpl"/>
+    <!--定时任务-->
+    <bean id="QuartzDaoImpl" class="com.seeyon.apps.test.download.dao.impl.QuartzDaoImpl"/>
+    <!--意见修改-->
+    <bean id="EdocOpinionDaoImpl" class="com.seeyon.apps.test.download.dao.impl.EdocOpinionDaoImpl"/>
+</beans>

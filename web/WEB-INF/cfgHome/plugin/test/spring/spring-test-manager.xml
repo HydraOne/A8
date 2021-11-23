@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http:springframework.org.dtd/spring-beans.dtd">
+
+<beans default-autowire="byName">
+    <!--监听器-->
+    <bean name="ContractFormEventListener" class="com.seeyon.apps.test.contractEvents.service.ContractFormEventListener"></bean>
+    <!--栏目-->
+    <bean name="ColumnServiceImpl" class="com.seeyon.apps.test.contractColumn.service.impl.ColumnServiceImpl"></bean>
+    <!--合同信息修改监听-->
+    <bean id="FormDataEventListener" class="com.seeyon.apps.test.formDataEvents.service.FormDataEventListener"/>
+    <!--付款定时任务-->
+    <bean name="TimedManagerImpl" class="com.seeyon.apps.test.timedTask.service.impl.TimedManagerImpl" init-method="init"></bean>
+    <!--合同付款监听-->
+    <bean id="ContractEndEventsListener" class="com.seeyon.apps.test.paymentCalendar.service.ContractEndEventsListener"/>
+    <!--合同付款累加推送监听-->
+    <bean id="PayFormEventsListener" class="com.seeyon.apps.test.payFormEvents.service.PayFormEventsListener"/>
+    <!--FTP-->
+    <bean id="FtpManagerImpl" class="com.seeyon.apps.test.download.service.impl.FtpManagerImpl" init-method="init"/>
+    <!--意见list-->
+    <bean id="OpinionListManagerImpl" class="com.seeyon.apps.test.download.service.impl.OpinionListManagerImpl"/>
+    <!--意见edoc-->
+    <bean id="EdocOpinionManagerImpl" class="com.seeyon.apps.test.download.service.impl.EdocOpinionManagerImpl"/>
+
+    <!--规范化调用-->
+    <bean id="ContractManagerImpl" class="com.seeyon.apps.test.contractEvents.service.impl.ContractManagerImpl"/>
+    <bean id="DownloadManagerImpl" class="com.seeyon.apps.test.download.service.impl.DownloadManagerImpl"/>
+</beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http:springframework.org.dtd/spring-beans.dtd">
+
+<beans default-autowire="byName">
+    <!--单点登录-->
+    <bean name="/pointSignController.do" class="com.seeyon.apps.test.contractEvents.controller.PointSignController"></bean>
+    <!--栏目-->
+    <bean name="/columnController.do" class="com.seeyon.apps.test.contractColumn.controller.ColumnController"/>
+    <!--批量下载附件-->
+    <bean name="/downloadAttachmentController.do" class="com.seeyon.apps.test.download.controller.DownloadAttachmentController"/>
+    <!--意见修改更新-->
+    <bean name="/opinionController.do" class="com.seeyon.apps.test.download.controller.OpinionController"/>
+    <!--最后一个需求选人控件增加账户显示-->
+    <bean name="/userAccount.do" class="com.seeyon.apps.test.getAccount.UserAccount"/>
+<!--规范化-->
+    <bean name="/ContractApi4cap4.do" class="com.seeyon.apps.test.contractEvents.controller.ContractApi4cap4"/>
+</beans>

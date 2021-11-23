@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ctpConfig>
+	<test>
+		<contractSupervisionProcess mark="{VE}" desc="●监管合同档案登记表(流程)----模板编号">1145141919810</contractSupervisionProcess>
+		<contractSupervisionBottom mark="{VE}" desc="●监管合同档案登记底表(无流程)----模板编号">1145141919811</contractSupervisionBottom>
+		<paySheetProcess mark="{VE}" desc="●付款流程表----模板编号">1145141919812</paySheetProcess>
+		<ssoLoginUrl mark="{VE}" desc="●单点登录url">http://localhost:80/seeyon/pointSignController.do</ssoLoginUrl>
+		<getTokenUrl mark="{VE}" desc="●获取token链接">http://localhost:80/seeyon/rest/token</getTokenUrl>
+		<restAccount mark="{VE}" desc="●rest账号">restful</restAccount>
+		<restPassword mark="{VE}" desc="●rest密码">384217a5-2a12-493b-8e23-8da15ad72842</restPassword>
+		<postRestUrl mark="{VE}" desc="●本机rest接口contract">http://localhost:80/seeyon/rest/RegulationContractResources/postContract</postRestUrl>
+		<timedPostRestUrl mark="{VE}" desc="●本机rest接口付款定时任务">http://localhost:80/seeyon/rest/TimedResources/toTimer</timedPostRestUrl>
+		<webservice mark="{VE}" desc="●webservice接口地址">http://127.0.0.1:80/seeyon/services/payWebServiceImpl?wsdl</webservice>
+		<deptManager mark="{VE}" desc="●部门经理">部门经理</deptManager>
+		<timeQuartzJob mark="{VE}" desc="●触发付款流程的定时任务开始时间">08:00:00</timeQuartzJob>
+		<downloadFile mark="{VE}" desc="●文件下载的地址">D:\A8download</downloadFile>
+		<ftpIP mark="{VE}" desc="虚拟机Ftp地址">192.168.229.128</ftpIP>
+		<ftpAccount mark="{VE}" desc="虚拟机登录账号">ftpuser1</ftpAccount>
+		<ftpPassWord mark="{VE}" desc="虚拟机登录密码">123456</ftpPassWord>
+	</test>
+</ctpConfig>
